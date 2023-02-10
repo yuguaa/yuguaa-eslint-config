@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "release": "bumpp && pnpm build && pnpm publish --access public"
+    "release": "pnpm build && pnpm publish --access public"
   },
   "keywords": [
     "eslint"

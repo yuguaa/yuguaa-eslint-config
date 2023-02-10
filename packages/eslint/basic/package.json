@@ -1,13 +1,13 @@
 {
   "name": "@yuguaa/eslint-config-basic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "author": "yuguaa",
   "license": "ISC",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "release": "bumpp --no-commit --no-push && pnpm build && pnpm publish --access public"
+    "release": "pnpm build && pnpm publish --access public"
   },
   "keywords": [
     "eslint"
