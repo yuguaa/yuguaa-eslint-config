@@ -4,7 +4,7 @@
 ### Install Dependencies
 
 ```bash
-pnpm add -D @yugu/eslint-config-basic
+pnpm add -D @yugu/eslint-config-vue2
 ```
 
 
@@ -12,7 +12,7 @@ pnpm add -D @yugu/eslint-config-basic
 ```json
 // .eslintrc
 {
-  "extends": "@yugu/eslint-config-basic"
+  "extends": "@yugu/eslint-config-vue2"
 }
 ```
 
