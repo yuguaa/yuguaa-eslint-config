@@ -1,15 +1,15 @@
 {
-  "name": "yuguaa-monorepo",
+  "name": "yugu-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "pnpm build:basic && pnpm build:ts && pnpm build:vue && pnpm build:vue2",
-    "build:basic": "pnpm --filter @yuguaa/eslint-config-basic build",
-    "build:ts": "pnpm --filter @yuguaa/eslint-config-ts build",
-    "build:vue": "pnpm --filter @yuguaa/eslint-config-vue build",
-    "build:vue2": "pnpm --filter @yuguaa/eslint-config-vue2 build",
-    "release": "pnpm --filter @yuguaa/eslint-config-basic release && pnpm --filter @yuguaa/eslint-config-ts release && pnpm --filter @yuguaa/eslint-config-vue release && pnpm --filter @yuguaa/eslint-config-vue2 release"
+    "build:basic": "pnpm --filter @yugu/eslint-config-basic build",
+    "build:ts": "pnpm --filter @yugu/eslint-config-ts build",
+    "build:vue": "pnpm --filter @yugu/eslint-config-vue build",
+    "build:vue2": "pnpm --filter @yugu/eslint-config-vue2 build",
+    "release": "pnpm --filter @yugu/eslint-config-basic release && pnpm --filter @yugu/eslint-config-ts release && pnpm --filter @yugu/eslint-config-vue release && pnpm --filter @yugu/eslint-config-vue2 release"
   },
   "keywords": [],
   "author": "",
