@@ -2,11 +2,36 @@
   "name": "@yuguaa/eslint-config-vue2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "author": "yuguaa",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "release": "bumpp && pnpm build && pnpm publish --access public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://github.com/yuguaa/yuguaa-eslint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuguaa/yuguaa-eslint-config"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@yuguaa/eslint-config-basic": "workspace:^1.0.0",
+    "tsup": "^6.6.0"
+  }
 }

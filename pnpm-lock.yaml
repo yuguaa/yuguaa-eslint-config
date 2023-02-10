@@ -16,6 +16,36 @@ importers:
     devDependencies:
       tsup: 6.6.0
 
+  packages/eslint/basic:
+    specifiers:
+      tsup: ^6.6.0
+    devDependencies:
+      tsup: 6.6.0
+
+  packages/eslint/typescript:
+    specifiers:
+      '@yuguaa/eslint-config-basic': workspace:^1.0.0
+      tsup: ^6.6.0
+    devDependencies:
+      '@yuguaa/eslint-config-basic': link:../basic
+      tsup: 6.6.0
+
+  packages/eslint/vue:
+    specifiers:
+      '@yuguaa/eslint-config-ts': workspace:^1.0.0
+      tsup: ^6.6.0
+    devDependencies:
+      '@yuguaa/eslint-config-ts': link:../typescript
+      tsup: 6.6.0
+
+  packages/eslint/vue2:
+    specifiers:
+      '@yuguaa/eslint-config-basic': workspace:^1.0.0
+      tsup: ^6.6.0
+    devDependencies:
+      '@yuguaa/eslint-config-basic': link:../basic
+      tsup: 6.6.0
+
   packages/playground/vite-vue:
     specifiers:
       '@rushstack/eslint-patch': ^1.1.4
